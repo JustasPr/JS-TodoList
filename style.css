@@ -15,10 +15,22 @@ body {
 p {
     margin: 0;
 }
+.tasks__text {
+    display: flex;
+    justify-content: space-between;
+}
+.clear {
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
 #tasks {
     margin-top: 20px;
     font-size: 18px;
     color: #fff;
+}
+.fas {
+    cursor: pointer;
 }
 .task {
     margin-top: 10px;
@@ -40,4 +52,8 @@ p {
 }
 #task__date {
     font-size: 14px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
 }
