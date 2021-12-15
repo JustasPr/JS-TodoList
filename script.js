@@ -10,7 +10,24 @@ let day = d.getUTCDay();
 let month = d.getUTCMonth();
 let year = d.getUTCFullYear();
 
+window.onload = () => {
+    let data = localStorage.getItem("Todo");
 
+    if(data){
+        list = JSON.parse(data);
+        id = list.length; 
+        loadTodo(list); 
+    }
+    else{
+        list = [];
+        id = 0;
+    }
+    function loadTodo(array){
+        array.forEach(function(item){
+            addTodo(item.name, item.id, item.done, item.date);
+        });
+    }
+};
 inputField.addEventListener("keyup", (e) => {
     if (e.keyCode === 13) {
         inputValue = inputField.value;
