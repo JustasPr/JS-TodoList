@@ -16,11 +16,12 @@ p {
     margin: 0;
 }
 #tasks {
-    margin: 20px 0px 10px 0px;
+    margin-top: 20px;
     font-size: 18px;
     color: #fff;
 }
 .task {
+    margin-top: 10px;
     background-color: #fff;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -32,7 +33,7 @@ p {
     font-size: 15px;
     justify-self: start;
 }
-.fa-times {
+.fa-check, .fa-times {
     line-height: 20px;
     justify-self: end;
     align-self: center;
